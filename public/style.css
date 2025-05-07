@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #0066cc;
+}
+
+header h1 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.ticket-section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.ticket-section h2 {
+    color: #0066cc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+.service-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.service-btn {
+    padding: 15px;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.ticket-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ticket-info p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.ticket-number span, .waiting-count span, .waiting-time span {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.ticket-status {
+    background-color: #f0f0f0;
+    height: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.status-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #0066cc;
+    transition: width 0.5s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .service-options {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNAM - Gestion des Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CNAM - Service d'Accueil</h1>
+           
+        </header>
+
+        <div class="ticket-section" id="loginSection">
+            <h2>Connexion au réseau CNAM</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+
+        <div class="ticket-section hidden" id="serviceSelection">
+            <h2>Choisissez un service</h2>
+            <div class="service-options">
+                <button class="service-btn" data-service="assurance">Assurance Maladie</button>
+                <button class="service-btn" data-service="remboursement">Remboursements</button>
+                <button class="service-btn" data-service="carte">Carte Vitale</button>
+                <button class="service-btn" data-service="autre">Autre Service</button>
+            </div>
+        </div>
+
+        <div class="ticket-section hidden" id="ticketDisplay">
+            <h2>Votre Ticket</h2>
+            <div class="ticket-info">
+                <p class="ticket-number">Ticket: <span id="ticketNum">-</span></p>
+                <p class="waiting-count">Personnes devant vous: <span id="waitingCount">-</span></p>
+                <p class="waiting-time">Temps estimé: <span id="estimatedTime">-</span> minutes</p>
+            </div>
+            <div class="ticket-status">
+                <div class="status-bar" id="statusBar"></div>
+            </div>
+            <button id="newTicketBtn">Prendre un nouveau ticket</button>
+        </div>
+
+        <footer>
+            <p>© 2023 Caisse Nationale d'Assurance Maladie</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
